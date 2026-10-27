@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>MacOS 26.0.1 Cold</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="menubar">
+    <div class="left">
+      <span class="apple" data-open="about">&#63743;</span>
+      <span class="bold">Finder</span><span>File</span><span>Edit</span><span>View</span><span>Window</span><span>Help</span>
+    </div>
+    <div class="right">
+      <span id="user-label">Not signed in</span><span id="clock"></span>
+    </div>
+  </div>
+  <div id="icons"></div>
+  <div id="windows"></div>
+  <div id="dock"></div>
+</div>
+<div id="login" class="hidden">
+  <div class="login-box">
+    <h2>Sign in with your Apple ID</h2>
+    <p class="muted">Local account only. No phone number required.</p>
+    <input id="login-email" placeholder="Apple ID (any email)" autocomplete="username">
+    <input id="login-pass" type="password" placeholder="Password" autocomplete="current-password">
+    <button id="login-btn">Sign In</button>
+    <button id="logout-btn" class="secondary">Sign Out</button>
+    <p id="login-msg" class="muted"></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
